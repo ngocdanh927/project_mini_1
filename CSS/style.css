@@ -1,0 +1,345 @@
+*{
+    box-sizing: border-box;
+    
+}
+.container{
+    width: 80% !important;
+}
+body{
+    background-color: #efefef;
+}
+header{
+    height: auto;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    transition: all 0.3s;
+}
+
+header .brand img{
+
+    height: 50px;
+    object-fit: cover;
+}
+header nav ul li a{
+    color: black !important;
+    font-size: 18px !important;
+    font-weight: 490 !important;
+}
+header nav{
+    padding: 0 !important;
+    width: 65%;
+    font-family: "DM Sans", sans-serif !important;
+}
+header nav ul{
+    height: 100px !important;
+}
+header nav ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav ul li:hover{
+    background-color: white;
+}
+header #icon-menu {
+    display: none;
+}
+
+header .icon-list {
+    width: 40px;
+    height: 40px;
+    border-top: 2px solid black;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+header .icon-list::after,
+header .icon-list::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s, top 0.3s, bottom 0.3s;
+}
+
+header .icon-list::after {
+    top: 25%;
+}
+
+header .icon-list::before {
+   top: 50%;
+}
+
+header #icon-menu:checked + .icon-list::before {
+    transform: rotate(-45deg);
+    bottom: 50%;
+
+}
+
+header #icon-menu:checked + .icon-list::after {
+    transform: rotate(45deg);
+    top: 50%;
+
+}
+header #icon-menu:checked + .icon-list{
+    border: 0;
+    
+}
+header .icon-list ,.icon-list::after ,.icon-list::before  {
+    display: none;
+}
+.section1{
+    position: relative;
+    background-image: url(https://mobirise.com/extensions/softwarem4/software-app/assets/images/background1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    height: 690px;
+    width: 100%;
+    z-index: 1;
+    font-family: "DM Sans", sans-serif !important;
+}
+.section1::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.74);
+    z-index: 0;
+}
+
+.section1 .content{
+    z-index: 2;
+}
+.section1 h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.section1 p{
+    color: #bbbbbb;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.section1 .btn-our{
+    padding: 18px 40px;
+    background-color: #f7d9c4;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.25s;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.section1 .btn-our:hover{
+    background-color: white !important;
+}
+.section1 .btn-learn{
+    padding: 18px 40px;
+    background-color: transparent;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.25s;
+    color: white;
+    border: 2px solid #7e7979;
+    cursor: pointer;
+}
+.section1 .btn-learn:hover{
+    background-color: #f7d9c4;
+    color: black;
+}
+.section2 img{
+    width: 90%;
+}
+.section2 h1{
+
+    font-size: 60px ;
+}
+.section2  button{
+    background-color: #f7d9c4 !important;
+    border: 0;
+}
+.section2  button:hover{
+    background-color: white !important;
+}
+.section3
+{
+    font-family: "DM Sans", sans-serif !important;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    position: relative;
+}
+.section3 img{
+    width: 320px;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+    position: absolute;
+    right: 60px;
+    top:-62px;
+}
+.section4 .container ul{
+    padding: 0;
+    margin: 0;
+}
+.section4 .container ul li {
+    list-style-type: none;
+}
+.section5 h1{
+    font-family: "DM Sans", sans-serif !important;
+    font-size: 60px;
+    font-weight: bold;
+}
+.section5 .card{
+    
+    width: 350px;
+}
+.section5 img{
+    height: 225px !important;
+    object-fit:cover ;
+}
+.section5 .card .card-body{
+    position: relative;
+}
+.section5 .card i{
+    position: absolute;
+    top: -50px;
+    right: 40px;
+}
+.section6 .left {
+    width: 60%;
+}
+.section6 .left h1{
+    font-weight: 650;
+    font-size: 70px;
+}
+.section7 img{
+    height: 150px;
+    object-fit: cover;
+
+}
+.section7 .card i{
+    transition: all 0.25s;
+}
+.section7 .card i:hover{
+    color: white !important;
+    background-color: #f7d9c4 !important;
+}
+.section8{
+    background-image: url(https://mobirise.com/extensions/softwarem4/software-app/assets/images/background3.jpg);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.section8 .container{
+    position: absolute;
+    width: 90% !important;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+@media screen and (max-width: 1070px) {
+    header{
+        flex-wrap: wrap;
+    }
+    header nav{
+        flex-direction: column;
+        width: 100%;
+        display: none !important;
+        margin-bottom: 30px;
+
+    }
+    header nav ul{
+        flex-direction: column;
+        flex-wrap: nowrap !important;
+        height: auto !important;
+    }
+
+    header .icon-list ,.icon-list::after ,.icon-list::before  {
+        display: block;
+    }
+    header #icon-menu:checked + .icon-list + nav{
+        display: flex !important;
+    }
+    .section1 .content p{
+        width: 100% !important;
+    }
+    .section2{
+        flex-direction: column;
+        justify-content: center;
+
+        /* flex-wrap: wrap; */
+    }
+    .section2 .section2-left img{
+        width: 100% !important;
+    }
+    .section2 .section2-right{
+        width: 100% !important;
+    }
+    .section2 .section2-right h1 + div{
+        width: 75% !important;
+    }
+    .section3{
+        min-height: 700px;
+    }
+    .section3 h1{
+        font-size: 50px !important;
+        width: 100% !important;
+    }
+    .section3 img{
+        top: auto;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .section4 p + div{
+        flex-direction: column;
+    }
+    .section5 h1 + div{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+    .section6 .container{
+        flex-wrap:wrap ;
+    }
+    .section6 .left{
+
+        width: 100% !important;
+    }
+    .section6 .left h1{
+        font-size: 50px !important;
+    }
+    .section6 .right{
+        width: 100% !important;
+    }
+    .section7 .member {
+        flex-wrap: wrap;
+        justify-content: center !important;
+        gap: 30px;
+    }
+    .section8 .container{
+        align-content: space-between;
+        flex-direction: column;
+        padding-left: 30px;
+    }
+    /* .section8 .container .d-flex{
+        justify-content: space-around;
+    } */
+    .section8 .container .d-flex div:nth-child(2){
+        padding-left: 50px;
+    }
+    .section8 .container button{
+        width: 25%;
+    }
+    
+}
